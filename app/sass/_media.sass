@@ -5,16 +5,187 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
+	.tags
+		.container
+			justify-content: flex-start 
+			flex-wrap: wrap
+	.tag 
+		margin-right: 17px
+	.overlay__content 
+		padding: 4.861vw 6.944vw
+	.col 
+		padding: 2.639vw
+	.row 
+		margin-left: -2.639vw
+		margin-right: -2.639vw
+	.overlay__content p 
+		margin-bottom: 2.986vw
+	.see-projects-wrapper
+		top: 40vw
+	.portfolio__item 
+		width: 42.333vw
+		height: 42.333vw
+		
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.overlay__content 
+		padding: 4vw 4vw
+	.overlay__content p 
+		margin-top: 1vw
+		font-size: 2vw
+	
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 834px)
 	/**/
+	.tag 
+		font-size: 14px
+		margin-bottom: 27px
+	.main-title 
+		font-size: 32px
+	.main-screen 
+		padding-top: 38px
+		padding-bottom: 76px
+	
+	.container 
+		width: 591px
+	.see-projects-wrapper 
+		right: 0
+	.overlay__row 
+		font-size: 15px
+	.overlay__content
+		padding: 20px 20px	
+		p 
+			font-size: 14px
+			margin-bottom: 10px
+	.button
+		//height: 5.5vw
+		//font-size: 1.8vw
+	.col 
+		padding: 1.5vw
+	.portfolio__item
+		height: auto
+		//height: 33vw
+		.button
+			img 
+				//width: 2vw
+	.social__link
+		margin: 0 14px
+		img 
+			max-height: 30px
+	.portfolio 
+		padding-bottom: 80px
+	.logos__item
+		width: 25%
+		margin-bottom: 54px
+		img 
+			max-width: 70%
+	
+	
+	
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 650px)
+	/**/
+	.see-projects  
+		display: none
+	.col 
+		width: 100%
+		padding: 0
+	.portfolio 
+		padding-top: 0px 
+		padding-bottom: 87px
+	.overlay__row
+		font-size: 5vw
+	.overlay__content p
+		font-size: 4.5vw
+		margin-top: 3vw 
+		margin-bottom: 5vw
+	.overlay__content 
+		padding: 7vw
+	.button 
+		height: 15vw 
+		font-size: 4vw 
+		border-radius: 10vw
+	.button img
+		margin-left: 3vw
+		width: 4.5vw
+	.portfolio__item 
+		width: 100%
+		height: 87.692vw
+	.logos__item
+		width: 50%
+		margin-bottom: 34px
+
+	
+
+	
+	
+	
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 480px)
 	/**/
+	.header 
+		.container 
+			justify-content: center
+	.menu 
+		width: 100%
+	.tags 
+		display: none
+	.main-title 
+		font-size: 24px
+	.main-screen .container 
+		max-width: 75.897vw
+
+	.portfolio__item .overlay
+		opacity: 1
+		transform: scale(1)
+		transform: rotateX(180deg)
+		backface-visibility: hidden
+		transition: all 1s
+	.portfolio__image
+		backface-visibility: hidden
+		transition: all 1s
+		position: absolute 
+		top: 0
+		left: 0
+
+	.col
+		width: 87.692vw
+		height: 87.692vw
+	.row 
+		justify-content: center
+	.portfolio__item
+		position: relative
+		perspective: 4000px
+		width: 87.692vw
+		height: 87.692vw
+	.portfolio__item:hover .overlay
+		opacity: 1
+		transform: rotateX(180deg) scale(1)
+
+	.portfolio__item.active
+		.overlay
+			transform: rotateX(360deg)
+		.portfolio__image
+			transform: rotateX(180deg)
+	.logos 
+		padding-bottom: 30px
+	.copy 
+		line-height: 1.43
+		br 
+			display: block
+	.footer 
+		padding-top: 39px 
+		padding-bottom: 62px
+	
+	
+
 
 
 /* Extra Small Devices, Phones */
