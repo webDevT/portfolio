@@ -18,6 +18,18 @@ $(function(){
         $('.portfolio__item').not(this).removeClass('active');
     })
 
+    jQuery(function($){
+        $(document).mouseup(function (e){ 
+          var div = $("body"); 
+          var div2 = $(".menu");
+          var div3 = $(".menu-btn");
+          if (!div.is(e.target) 
+              && div2.has(e.target).length === 0) {
+            div2.slideUp();
+            div3.removeClass('active');
+          }
+        });
+      });
     
 
 });
