@@ -24,9 +24,9 @@ $(function(){
           var div2 = $(".menu");
           var div3 = $(".menu-btn");
           if (!div.is(e.target) 
-              && div2.has(e.target).length === 0) {
+              && div2.has(e.target).length === 0  && div3.has(e.target).length === 0 )  {
             div2.slideUp();
-            div3.removeClass('active');
+            div3.removeClass('active')
           }
         });
       });
