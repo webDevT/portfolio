@@ -32,17 +32,6 @@ $(function(){
       });
 
 
-      const btnPlay = document.querySelector('.btn-play');
-// const btnStop = document.querySelector('.btn-stop');
-const wrapperVideo = document.getElementById('video');
-
-btnPlay.addEventListener('click',function(){
-  wrapperVideo.play();
-});
-
-// btnStop.addEventListener('click',function(){
-//   wrapperVideo.pause();
-// });
     
 
 });
