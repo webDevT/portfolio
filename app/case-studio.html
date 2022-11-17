@@ -157,8 +157,30 @@ A system of 3 layers was created to have support accessible from every screen in
 
 			</div>
 
-			<div class="us__photo-col us__photo-col--2">
-				<img src="img/ux2.png" alt="">
+			<div class="us__photo-col us__photo-col--video us__photo-col--2">
+				<div class="video-wrapper">
+					<img src="img/ux2.png" alt="">
+				
+
+				  <div class="video_with_link video-1">
+					<video class="video" src="videos/Dashboard_Transition.mp4" class="PlayPauseVideo"></video>
+					<div class="PlayPauseVideo">
+						<img src="img/play.svg" alt="" class="play-btn">
+					</div>
+						
+				</div>
+
+				<div class="video_with_link video-2">
+					<video class="video" src="videos/Screen Recording 2022-11-11 at 13.17.08.mp4" class="PlayPauseVideo"></video>
+					<div class="PlayPauseVideo">
+						<img src="img/play.svg" alt="" class="play-btn">
+					</div>
+						
+				</div>
+				</div>
+				
+				
+				
 				<div class="photo__text">
 					Transitions worked between the 3 different layers
 				</div>
@@ -331,5 +353,20 @@ A system of 3 layers was created to have support accessible from every screen in
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		
+		$(document).on('click','.PlayPauseVideo',function(){
+        var video = $(this).closest(".video_with_link").find(".video")[0];
+        if (video.paused) {
+          video.play();
+		  $(this).find('img').fadeOut();
+        } else {
+          video.pause();
+		  $(this).find('img').fadeIn();
+        }
+      });
+	</script>
 </body>
+
 </html>
