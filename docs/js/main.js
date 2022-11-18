@@ -5,7 +5,7 @@ $(function(){
         $('.menu').slideToggle();
     });
 
-    $(".see-projects-wrapper").on("click","a", function (event) {
+    $(".see-projects-wrapper, .wrap").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
         top = $(id).offset().top;
@@ -31,7 +31,15 @@ $(function(){
         });
       });
 
-
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+        $('.btn').css('opacity', '0');
+        }
+        else{
+        $('.btn').css('opacity', '1');
+        }
+        });
+        
     
 
 });
