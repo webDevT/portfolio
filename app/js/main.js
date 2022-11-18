@@ -40,7 +40,10 @@ $(function(){
         }
         });
         
-    
+    $('.load-more').click(function(){
+      $('.portfolio').addClass('active');
+      $(this).fadeOut();
+    })
 
 });
 
