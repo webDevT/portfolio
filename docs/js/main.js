@@ -39,6 +39,9 @@ $(function(){
         $('.btn').css('opacity', '1');
         }
         });
+
+        
+        
         
     $('.load-more').click(function(){
       $('.portfolio').addClass('active');
@@ -47,6 +50,18 @@ $(function(){
 
 });
 
+
+var postion = $('.portfolio').offset().top,
+    height = $('.portfolio').height();
+$(document).on('scroll', function (){
+  var scroll = $(document).scrollTop();
+  if(scroll  > postion && scroll ) {
+     $('.social-fix').addClass('active');
+     }else {
+      $('.social-fix').removeClass('active');
+
+     }
+})
 
 // gsap.config({ trialWarn: false });
 // console.clear();

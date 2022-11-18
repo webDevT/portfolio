@@ -561,6 +561,21 @@ p
 .portfolio.active
     .col 
         display: block
+.social-fix
+    position: fixed
+    right: 25px 
+    top: 50vh
+    display: none
+    flex-direction: column
+    transform: translateY(-50%)
+    a 
+        display: block 
+        margin-bottom: 13px
+    a:last-child 
+        display: none
+
+.social-fix.active 
+    display: flex
 @import "media"
 
 
