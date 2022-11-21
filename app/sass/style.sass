@@ -12,10 +12,12 @@ body
     font-family: $main-font
     box-sizing: border-box
 .container 
-    width: 1088px 
+    width: 1100px 
     max-width: 90vw
     margin-left: auto 
     margin-right: auto
+p 
+    margin-top: 0
 //end global style
 
 //start header style
@@ -68,6 +70,7 @@ body
 //start main screen 
 .main-screen 
     padding: 90px 0
+    padding-bottom: 180px
 .main-title 
     font-size: 48px 
     font-weight: 600
@@ -75,11 +78,13 @@ body
     text-transform: uppercase
 //end main screen
 
-.tags 
+.tags
+   
     .container
         display: flex 
         flex-wrap: wrap 
         justify-content: space-between
+        padding-top: 40px 
 .tag 
     font-weight: 400 
     color: #AFAFAF
@@ -88,7 +93,7 @@ body
     margin-right: 6px
 .see-projects-wrapper
     position: absolute 
-    top: 90vh 
+    top: 30vh 
     right: 6px
 .see-projects    
     display: flex
@@ -96,6 +101,7 @@ body
     align-items: center
     justify-content: center
     text-decoration: none
+    color: #fff
     img 
         height: 34px
 .see-project__text 
@@ -103,7 +109,7 @@ body
     font-weight: 600 
     font-size: 12px
     text-transform: uppercase
-    color: #000
+    color: #fff
 
 //start portfolio style
 .portfolio
@@ -290,8 +296,332 @@ body
     display: none
 //end ablut style
 
+//start case studio style
+.case-studio
+    display: flex 
+    flex-direction: column 
+    padding-top: 90px
+.cs__sub-title
+    color: #FC4C02 
+    font-weight: 700
+    margin-bottom: 30px
+.cs__sub-title--black
+    font-weight: 700
+    margin-bottom: 30px
+.cs__title 
+    text-align: center 
+    font-size: 48px
+    margin-bottom: 72px
+    font-weight: 500
+.cs__row
+    display: flex
+    width: 820px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
+.cs-col 
+    width: 50%
+    ul
+        width: 420px 
+        max-width: 100%
+    
+li 
+    line-height: 1.5
+.section-content--col 
+    padding-bottom: 119px
+.onmo 
+    padding: 250px 0
+    background-color: #F9F9F9
+    background-image: url('../img/Onmo_mockup.png')
+    background-repeat: no-repeat 
+    background-position: right center
+.image 
+    width: 100%
+    padding-bottom: 90px
+    img 
+        max-width: 100%
+.ux-section 
+    .cs__title 
+        text-align: left
+.photo__text 
+    text-align: right
+.ux__row
+    display: flex
+    justify-content: space-between
+.ux__text-col
+    width: 546px
+    max-width: 49%
+    p 
+        line-height: 1.6
+        margin-top: 0
+        margin-bottom: 40px
+.us__photo-col
+    width: 508px
+    max-width: 50%
+    position: relative
+    img 
+        max-width: 100%
+.photo__text
+    font-size: 14px 
+    font-weight: 600
+    padding-top: 10px
+    p 
+        line-height: 1.6
+.us__photo-col--2 
+    margin-top: 71px
+.semi-bold 
+    font-weight: 700
+.desktop-image 
+    padding: 87px 0
+    img 
+        max-width: 100%
+.left 
+    text-align: left
+p 
+    line-height: 1.6
+.wiframe 
+    padding-bottom: 87px
+.image-content
+    background: #161C20
+    padding: 97px 95px
+    display: flex 
+    justify-content: space-between
+    img 
+        width: 183px
+.takeaways__col-title
+    width: 280px
+.takeaways__row
+    display: flex
+.takeaways__col
+    width: calc( 100% - 280px  )
+.takeaways__item
+    margin-bottom: 59px
+    p 
+        margin-bottom: 0 
+        margin-top: 0
+.takeaways
+    padding-bottom: 100px
+//end case studio style
+.video-1
+    position: relative
+    padding: 5px
+    video 
+        width: 221px
+.video-2
+    position: relative
+    padding: 5px
+    video 
+        width: 221px
+.us__photo-col--video
+    position: relative
+.PlayPauseVideo
+    position: absolute 
+    top: 0
+    left: 0 
+    width: 100%
+    height: 100%
+    display: flex 
+    justify-content: center 
+    align-items: center
+    cursor: pointer
+.video-wrapper 
+    position: relative  
+    width: 509px
+    justify-content: center 
+    align-items: center
+    padding: 70px 10px
+    background: #C0BCB9
+    max-width: 100%
+    display: flex
+    min-width: 100%
+.case-studio--merck
+    .cs__sub-title
+        color: #02A6B6
+//start green section style
+.grey-section
+    background: #F3F5F5
+    padding-top: 86px 
+    padding-bottom: 145px
+    .container 
+        display: flex 
+        justify-content: space-between
+.grey-section__image-col
+    width: 504px 
+    max-width: 50% 
+    
+    img 
+        max-width: 100%
+.grey-section__col 
+    width: 546px 
+    max-width: 48%
+    display: flex 
+    flex-direction: column 
+    justify-content: space-between
+.white-section
+    padding-top: 128px 
+    padding-bottom: 163px
+//end green section style
+.white-section 
+    display: flex 
+    flex-direction: column
+.graph-img 
+    width: 88.750vw
+    align-self: flex-end
+.takeaways--img
+    padding-top: 176px 
+    padding-bottom: 176px
+.takeaways__img
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    margin-top: 50px
+    max-width: 100% 
+    width: 343px
+//start mora style
+.case-studio--mora
+    .cs__sub-title
+        color: #2C3D73
+.case-studio--mora .ux-section
+    p 
+        margin-bottom: 100px
+.image
+    img 
+        margin-left: auto 
+        margin-right: auto
+        display: block
+.two-image
+    padding-bottom: 107px
+    .container
+        display: flex 
+        justify-content: space-between
+        img 
+            width: 49%
+.image-text
+    text-align: right
+    display: flex 
+    justify-content: flex-end
+    padding-top: 23px
+.image-text__content
+    width: 641px
+    max-width: 100%
+//end mora style
+.hi 
+    color: #fff
 
+.wrap 
+    z-index: 9999
+    position: relative
+    transform: translateY(-200%)
+.btn
+    min-width: 47px
+    min-height: 47px
+    background: #F89880
+    background: linear-gradient(90deg, #F89880 0%, #F89880 100%)
+    border: none
+    border-radius: 1000px
+    box-shadow: 0px 0px 24px rgba(#F89880,.64)
+    transition: all 0.3s ease-in-out 0s
+    cursor: pointer
+    outline: none
+    position: relative
+    width: 47px
+    height: 47px
+    display: flex
+    justify-content: center
+    align-items: center
+    img 
+        width: 15px
+.btn::before
+    content: ''
+    border-radius: 50%
+    min-width: 81px
+    min-height: 81px
+    border: 1px solid #F89880
+    box-shadow: 0 0 60px rgba(#F89880, .64)
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    opacity: 0
+    transition: all .3s ease-in-out 0s
+.load-more 
+    width: 251px
+    margin-left: auto 
+    margin-right: auto
+    margin-top: 50px
+    cursor: pointer
+.portfolio
+    .col 
+        display: none
+    .col:first-child,
+    .col:nth-child(2),
+    .col:nth-child(3),
+    .col:nth-child(4)
+        display: block
+.portfolio.active
+    .col 
+        display: block
+.social-fix
+    position: fixed
+    right: 25px 
+    top: 50vh
+    display: none
+    flex-direction: column
+    transform: translateY(-50%)
+    a 
+        display: block 
+        margin-bottom: 13px
+    a:last-child 
+        display: none
+
+.social-fix.active
+    display: flex
+.main-screen
+    overflow-x: hidden
+    background-color: #161616
+.text > p
+    background: linear-gradient(to right,rgb(255, 255, 255) 50%,rgb(37, 37, 37) 50%)
+    background-size: 200% 100%
+    background-position-x: 100%
+    color: transparent
+    background-clip: text
+    -webkit-background-clip: text
+    line-height: 1.5
+    margin-bottom: 0
+.wrap
+    display: flex
+    align-items: center
+    justify-content: center
+.btn:hover
+    transform: translateY(-6px)
+.btn:hover::before
+    opacity: 1
+.btn::after
+    content: ''
+    width: 30px
+    height: 30px
+    border-radius: 100%
+    border: 1px solid #F89880
+    position: absolute
+    z-index: -1
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    animation: ring 1.5s infinite
+.btn:hover::after
+    animation: none
+    display: none
+@keyframes ring
+    0%
+        width: 30px
+        height: 30px
+        opacity: 1
+    100%
+        width: 100px
+        height: 100px
+        opacity: 0
 @import "media"
+
 
 
 

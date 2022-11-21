@@ -1,7 +1,11 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
-
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1235px)
+	/**/
+	.main-title 
+		font-size: 3.8vw
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
@@ -26,6 +30,15 @@
 	.portfolio__item 
 		width: 42.333vw
 		height: 42.333vw
+	.image-content 
+		padding: 97px 40px
+		img 
+			width: 17vw
+	.video-2, 
+	.video-1 
+		width: 45%
+		video 
+			width: 100%
 		
 
 /* Medium Devices, Desktops */
@@ -40,6 +53,58 @@
 			width: 71.76px
 			height: 71.76px
 			border-radius: 13px
+	.onmo 
+		background-size: 100%
+		padding: 140px 0
+	.grey-section
+		.container 
+			flex-direction: column
+	.grey-section__col,
+	.grey-section__image-col 
+		width: 100%
+		max-width: 100%
+		img 
+			width: 100%
+	.grey-section__image-col 
+		margin-bottom: 30px
+	.case-studio--merck
+		.section-content--col
+			background: transparent
+		.col-containr 
+			flex-direction: column
+		.section-header 
+			padding-top: 40px 
+			padding-bottom: 40px
+	.case-studio--mora
+		.section-content--col
+			background: transparent
+		.col-containr 
+			flex-direction: column
+		.section-header 
+			padding-top: 40px 
+			padding-bottom: 40px
+	.grey-section__image-col img.desktop
+		display: none
+	.grey-section
+		padding: 40px 0
+		.container 
+			flex-direction: column-reverse
+	.white-section 
+		padding-top: 40px 
+		padding-bottom: 40px
+	.graph-img 
+		width: 98vw
+	.grey-section__col
+		p 
+			margin-bottom: 40px
+	.takeaways__img 
+		margin-top: 0
+	.takeaways--img
+		padding-top: 80px 
+		padding-bottom: 80px
+	
+
+
 	
 
 
@@ -55,7 +120,10 @@
 	.main-screen 
 		padding-top: 38px
 		padding-bottom: 76px
-	
+	.wrap 
+		display: none
+	.btn 
+		display: none
 	.container 
 		width: 591px
 	.see-projects-wrapper 
@@ -93,6 +161,70 @@
 		flex-wrap: wrap
 		img 
 			margin-bottom: 25px
+	.ux__row 
+		flex-direction: column
+	.ux__text-col 
+		width: 100% 
+		max-width: 100%
+		p 
+			margin-bottom: 0
+	.us__photo-col
+		width: 100% 
+		max-width: 100%
+		padding-top: 81px 
+		padding-bottom: 81px
+		img 
+			width: 100%
+	.photo__text 
+		display: none
+	.ux-section 
+		
+		.cs__sub-title 
+			display: none
+		.cs__title 
+			margin-bottom: 40px
+	.ux-section .cs__title
+		font-weight: 500
+	.ux__text-col .ux-item
+		margin-bottom: 40px
+	.ux__text-col .ux-item:last-child 
+		margin-bottom: 0
+	.desktop-image 
+		display: none
+	.image-content 
+		padding: 40px 40px
+		img 
+			width: 13vw
+
+	.takeaways__row 
+		flex-direction: column
+	.takeaways__col 
+		width: 100%
+	.takeaways__col-title
+		width: 100%
+		margin-bottom: 87px
+		.cs__sub-title 
+			color: #000
+	.takeaways__item 
+		margin-bottom: 74px
+	.takeaways 
+		padding-bottom: 50px
+	.play-btn
+		width: 14.933vw 
+		height: 14.933vw
+	.takeaways--img .takeaways__col-title
+		margin-bottom: 0
+	.takeaways--img
+		padding-bottom: 80px
+	.image--80 
+		img 
+			max-width: 80%
+	.main-title 
+		font-size: 3.5vw
+
+
+	
+		 
 
 	
 	
@@ -144,6 +276,86 @@
 		width: 258px
 		margin-left: auto 
 		margin-right: auto
+	.case-studio 
+		flex-direction: column-reverse
+		padding-top: 0
+	.onmo 
+		background-color: transparent
+		background-position: top right
+		padding-top: 53vw
+		padding-bottom: 0
+		img 
+			margin-left: auto 
+			margin-right: auto
+			display: block
+			max-width: 44.267vw
+		.container
+			background: #F9F9F9
+			padding-left: 0 
+			padding-right: 0
+			width: 100% 
+			max-width: 100%
+	.onmo__title 
+		padding-top: 14.400vw
+		padding-bottom: 11.467vw
+	.col-containr
+		flex-direction: column-reverse
+		display: flex
+	.section-content--col
+		background: #F9F9F9
+		padding-bottom: 60px
+	.cs__row 
+		flex-direction: column
+	.cs-col 
+		width: 100%
+	.section-header 
+		padding-top: 81px 
+		padding-bottom: 81px
+	.cs__title 
+		font-size: 20px
+	.case-studio 
+		.container 
+			max-width: 85.600vw
+	.cs__sub-title 
+		margin-bottom: 13px
+	.onmo 
+		.container 
+			max-width: 100%
+	.image 
+		.container 
+			max-width: 100%
+			width: 100%
+	.cs__title 
+		margin-bottom: 0
+	.ux-section 
+		.container 
+			width: 100% 
+			max-width: 100%
+		.cs__title
+			width: 87.200vw
+			max-width: 87.200vw
+			margin-left: auto 
+			margin-right: auto
+	.ux__text-col
+		width: 87.200vw
+		max-width: 87.200vw
+		margin-left: auto 
+		margin-right: auto
+	.wiframe
+		padding-bottom: 70px 
+	.image-content 
+		flex-direction: column
+		align-items: center
+		padding-top: 104px 
+		padding-bottom: 104px
+		img 
+			width: 183px
+			display: block 
+			margin-bottom: 82px 
+		img:last-child 
+			margin-bottom: 0
+	
+	
 
 	
 
@@ -155,6 +367,8 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 480px)
 	/**/
+	body 
+		font-size: 16px
 	.header 
 		.container 
 			justify-content: center
@@ -220,6 +434,36 @@
 		padding-bottom: 110px
 	.about .button 
 		width: 100%
+	.two-image
+		.container 
+			flex-direction: column 
+			width: 100% 
+			max-width: 100%
+			img 
+				width: 100%
+				margin-bottom: 90px
+			img:last-child 
+				margin-bottom: 0
+	.case-studio--mora .ux-section p 
+		max-width: 87.2vw
+		margin-left: auto 
+		margin-right: auto
+	.image-text__content
+		max-width: 85.6vw
+		margin-left: auto 
+		margin-right: auto
+	.main-title 
+		font-size: 6vw
+	.social-fix a:last-child 
+		display: block
+	.social-fix
+		z-index: 999
+		top: 100vh
+		transform: translateY(-100%)
+		right: 10px
+	.portfolio 
+		padding-top: 40px
+
 	
 
 
