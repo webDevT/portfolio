@@ -5,7 +5,7 @@ $(function(){
         $('.menu').slideToggle();
     });
 
-    $(".see-projects-wrapper, .wrap, .to-top").on("click","a", function (event) {
+    $(".wrap, .to-top").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
         top = $(id).offset().top;
