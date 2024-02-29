@@ -23,39 +23,18 @@
 
 
 <body data-rsssl="1"
-  class="home page-template page-template-templates page-template-flexible page-template-templatesflexible-php page page-id-2"
-  data-barba="wrapper" style="overflow: inherit;" aria-live="polite" data-new-gr-c-s-check-loaded="14.1156.0"
-  data-gr-ext-installed="" data-device="desktop" data-scroll="1">
+  class=""
+  data-barba="wrapper" style="overflow: inherit;" aria-live="polite" data-new-gr-c-s-check-loaded=""
+  data-gr-ext-installed="" data-device="desktop" data-scroll="0">
   <div data-barba="container" data-barba-namespace="home">
 	<div id="page" class="site" data-scroll-container="" data-scroll-section-id="section0" data-scroll-section-inview="" style="opacity: 1; pointer-events: all; overflow-y: scroll;">
-
 	
-   
-     
-
-
-
-
-
-
-
-	<!-- start see projects btn -->
-<div class="see-projects-wrapper animate__animated animate__fadeOutDownBig animate__delay-7s">
-	<a href="case-studio.html" class="see-projects">
-	<div class="see-project__text">
-		SEE CASE STUDIES
-	</div>
-	
-	<img src="img/arrow.svg" alt="">
-</a>
-</div>
-<!-- end see projects btn -->
 
 	<!-- start header -->
 <header class="header">
 	<div class="container">
 
-		<a href="case-studio.html" class="header__link active">
+		<a href="index.html" class="header__link active">
 			HOME
 		</a>
 
@@ -70,6 +49,18 @@
 	</div>
 </header>
 <!-- end header -->
+
+<!-- start see projects btn -->
+<div class="see-projects-wrapper animate__animated animate__fadeOutDownBig animate__delay-7s">
+	<a href="case-studio.html" class="see-projects">
+	<div class="see-project__text">
+		SEE CASE STUDIES
+	</div>
+	
+	<img src="img/arrow.svg" alt="">
+</a>
+</div>
+<!-- end see projects btn -->
 	 
 <!-- start main-screen -->
 <section class="main-screen">
@@ -373,37 +364,22 @@ Payment system / UX&UI Design
 </script>
 
 
-     <script type="text/javascript"
-          src="js/vendors.js"
-          id="jquery-js" defer="" data-deferred="1"></script>
-
         <script type="text/javascript"
           src="js/scroll.js"
           id="main_js-js" defer="" data-deferred="1"></script>
 <script>
-	// Найдем все ссылки на странице
 var links = document.querySelectorAll("a");
-
-// Проходим по каждой ссылке и добавляем обработчик события
 links.forEach(function(link) {
     link.addEventListener("click", clickHandler);
 });
-
-// Обработчик события для ссылок
 function clickHandler(event) {
-    // Отменяем стандартное действие
     event.preventDefault();
-
-    // Возможно, здесь есть какая-то логика, которую вы хотите выполнить перед переходом по ссылке
-
-    // Удаляем обработчик события, чтобы вернуть стандартное действие
     this.removeEventListener("click", clickHandler);
-
-    // Продолжаем переход по ссылке
     window.location.href = this.getAttribute("href");
 }
 
 </script>
+
 		  
 </body>
 </html>
