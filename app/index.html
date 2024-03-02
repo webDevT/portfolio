@@ -20,12 +20,16 @@
 	<link rel="stylesheet" href="css/style.min.css">
 	
 </head>
-
-
-<body data-rsssl="1" data-barba="wrapper" style="overflow: inherit;" aria-live="polite" 
+<style>
+	
+  </style>
+<body id="test" data-rsssl="1" data-barba="wrapper" style="overflow: inherit;" aria-live="polite" 
   data-gr-ext-installed="" data-device="desktop" data-scroll="0">
   <div data-barba="container" data-barba-namespace="home">
 	<div id="page" class="site" data-scroll-container="" data-scroll-section-id="section0" data-scroll-section-inview="" style="opacity: 1; pointer-events: all; overflow-y: scroll;">
+		
+
+		
 	
 <div style="height: 100px;" class="height-100"></div>		
 
@@ -76,7 +80,7 @@
 		</div>
 
 		<div class="main-screen__row main-screen__row--3">
-			<div class="animate__animated animate__slideInDown animate__delay-4s">
+			<div class="animate__animated animate__slideInDown animate__delay-44s">
 				specialised in crafting 
 			<span>websites and apps</span>
 			</div>
@@ -93,13 +97,30 @@
 		</div>
 
 		<div class="hero-item animate__animated animate__fadeInUp animate__delay-8s">
-			<div class="hero-item__circle">
+			
+			<div class="circle-wrapper">
+				<div class="hero-item__circle">
 				+10
 			</div>
 
 			<div class="hero-item__text">
 				Years of experience crafting digital products
 			</div>
+			</div>
+
+			<div class="buttons-wrapper">
+				<a href="about.html" class="button button--transparent">
+					About me
+				</a>
+				<a href="mailto:eduardo.guerrero.contact@gmail.com" class="button button--black">
+					<div class="button-content">
+						<div class="online"></div>
+						Let’s chat
+					</div>
+					
+				</a>
+			</div>
+			
 			
 		</div>
 
@@ -119,8 +140,9 @@
 				 <img src="img/case1.png" alt="" style="height:68vh;">
 				 <div class="case__header">
 					<div class="case__header-text">
-						Mora Finance <br>
-	Fintech / UX&UI Design / Branding
+						Mora Finance 
+						<span>Fintech / UX&UI Design / Branding</span>
+	
 					</div>
 					<img src="img/arrow3.svg" alt="">
 				</div>
@@ -136,8 +158,9 @@
 				 <img src="img/case2.png" alt="" style="height:68vh;">
 				 <div class="case__header">
 					<div class="case__header-text">
-						Portfolio REIT <br>
-Fintech / UX&UI Design
+						Portfolio REIT
+						<span>Fintech / UX&UI Design</span>
+
 					</div>
 					<img src="img/arrow3.svg" alt="">
 
@@ -154,8 +177,9 @@ Fintech / UX&UI Design
 				 <img src="img/case3.png" alt="" style="height:68vh;">
 				 <div class="case__header">
 					<div class="case__header-text">
-						Onmo bank <br>
-Fintech / UX&UI Design
+						Onmo bank 
+						<span>Fintech / UX&UI Design</span>
+
 					</div>
 					<img src="img/arrow3.svg" alt="">
 				</div>
@@ -171,8 +195,9 @@ Fintech / UX&UI Design
 				 <img src="img/case4.png" alt="" style="height:68vh;">
 				 <div class="case__header">
 					<div class="case__header-text">
-						Merck Animo GPS <br>
-Payment system / UX&UI Design
+						Merck Animo GPS
+						<span>Payment system / UX&UI Design</span>
+
 					</div>
 					<img src="img/arrow3.svg" alt="">
 				</div>
@@ -194,6 +219,7 @@ Payment system / UX&UI Design
 		From ambitious startups to global companies, I had the chance to collaborate with great businesses and teams
 	</div>
 </section>
+
 <!-- end text section -->
 
 <!-- start logos section -->
@@ -262,21 +288,52 @@ Payment system / UX&UI Design
 	</div>
 </section>
 <!-- end logos section -->
+<!-- <section class="full no-border" data-section-horizontal="" style="padding-top: 10px;padding-left: 4vw">
+	<div class="pin-wrap">
+
+	  <div class="box box-case" style="min-width: 150vw; height: 100vh;">
+		  <div class="case-content">
+			<div class="call-to-action__title" >
+				Want to know more?
+			</div>
+		  </div>
+	   
+	  </div>
+
+	
+
+	
+ 
+	</div>
+  </section> -->
+  <!-- <section class="full no-border" data-section-horizontal="" style="padding-top: 10px;padding-left: 4vw">
+	<div class="pin-wrap">
+
+	  <div class="box box-case" style="min-width: 150vw; height: 100vh;">
+		  <div class="case-content">
+			<div class="call-to-action__title" >
+				Want to know more?
+			</div> 
+		  </div>
+	   
+	  </div>
+
+	</div>
+  </section> -->
 
 <!-- start call to action section -->
-<section class="call-to-action">
-	<div class="container">
+<section class="call-to-action" >
+    <div>
+		<div class="call-to-action__title" id="callToAction">
+            Want to know more?
+        </div>
 
-		<div class="call-to-action__title">
-			Want to know more about me and my work?
-		</div>
-
-		<a href="" class="call-to-action__btn">
-			GET IN TOUCH!
-		</a>
-	</div>
-	
+        <a href="" class="call-to-action__btn">
+            GET IN TOUCH!
+        </a>
+    </div>
 </section>
+
 <!-- end call to action section -->
 
 <!-- start footer -->
@@ -378,9 +435,69 @@ function clickHandler(event) {
 }
 
 </script>
-<script>
 
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Получаем элемент с атрибутом data-scrolling
+      const htmlElement = document.querySelector('html');
+      // Получаем элемент с классом main-screen__row
+      const targetElement = document.querySelector('.main-screen__row--5');
+      const targetElement2 = document.querySelector('.main-screen__row--3 .animate__animated');
+	  const targetElement3 = document.querySelector('.hero-item');
+	  
+
+      // Отслеживаем изменения значения атрибута data-scrolling
+      const observer = new MutationObserver(function(mutationsList) {
+        for(let mutation of mutationsList) {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'data-scrolling') {
+            if (mutation.target.getAttribute('data-scrolling') === 'down') {
+              // Добавляем класс test, когда значение изменится на "down"
+              targetElement.classList.remove('animate__delay-8s');
+              targetElement2.classList.remove('animate__delay-44s');
+			  targetElement3.classList.remove('animate__delay-8s');
+			  setTimeout(typeWriter, 10);
+			  setTimeout(typeWriter2, 20);
+            } else {
+              // Убираем класс test в других случаях
+              
+            }
+          }
+        }
+      });
+
+      // Начинаем отслеживать изменения атрибута data-scrolling
+      observer.observe(htmlElement, { attributes: true });
+    });
 </script>
-		  
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+    const callToActionTitle = document.querySelector('.call-to-action__title');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 0) {
+            callToActionTitle.classList.add('move-left');
+        } else {
+            callToActionTitle.classList.remove('move-left');
+        }
+    });
+});
+</script>
+
+<!-- <script>
+	window.addEventListener('scroll', function() {
+	  const title = document.querySelector('.call-to-action__title');
+	  const scrollDirection = window.scrollY > this.lastScroll ? 'down' : 'up';
+	  this.lastScroll = window.scrollY;
+  
+	  if (scrollDirection === 'down') {
+		title.classList.add('scrolled'); // Добавляем класс при прокрутке вниз
+	  } else {
+		title.classList.remove('scrolled'); // Убираем класс при прокрутке вверх
+	  }
+	});
+  </script> -->
+ 
 </body>
 </html>
